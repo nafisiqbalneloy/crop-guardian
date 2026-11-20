@@ -176,3 +176,8 @@ Crop Guardian is a decision-support tool, not a replacement for an agronomist. A
 *If this project helps you, consider giving it a ⭐*
 
 </div>
+
+
+## Credits
+
+Crop Guardian was built by our hackathon team. The original repository was uploaded by Hasibur Rahman Sun: https://github.com/Hasibur-sun/crop-guardian
