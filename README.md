@@ -2,9 +2,7 @@
 
 # 🌾 Crop Guardian
 
-#> Planned work is tracked in [ROADMAP.md](ROADMAP.md).
-
-## *Understand Your Crops. Protect Your Harvest.*
+### *Understand Your Crops. Protect Your Harvest.*
 
 **An AI-powered crop disease assistant that turns a plant photo into a careful, explainable diagnosis, built for farmers in Bangladesh.**
 
@@ -30,6 +28,8 @@
 Crop Guardian lets a farmer snap a photo of a sick leaf and get back a structured assessment: what the problem likely is, how confident the system is, what the agricultural literature says, and when the weather makes things worse.
 
 It does **not** blindly trust a single model. Two independent AIs look at every supported photo, a knowledge base checks their claims, and the system **holds back advice when it isn't sure**. Safety over swagger.
+
+> Planned work is tracked in [ROADMAP.md](ROADMAP.md).
 
 ## 🚀 Features
 
