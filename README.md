@@ -2,7 +2,9 @@
 
 # 🌾 Crop Guardian
 
-### *Understand Your Crops. Protect Your Harvest.*
+#> Planned work is tracked in [ROADMAP.md](ROADMAP.md).
+
+## *Understand Your Crops. Protect Your Harvest.*
 
 **An AI-powered crop disease assistant that turns a plant photo into a careful, explainable diagnosis, built for farmers in Bangladesh.**
 
