@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile all Python files
+        run: python -m compileall -q .
+
+      - name: Validate JSON data files
+        run: |
+          python - <<'PY'
+          import glob, json, sys
+          bad = 0
+          for path in glob.glob("models/*.json") + glob.glob("knowledge/*.json"):
+              try:
+                  json.load(open(path, encoding="utf-8"))
+                  print("ok  ", path)
+              except Exception as e:
+                  bad += 1
+                  print("FAIL", path, e)
+          sys.exit(1 if bad else 0)
+          PY
